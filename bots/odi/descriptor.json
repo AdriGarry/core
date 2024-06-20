@@ -29,7 +29,7 @@
         "weather",
         "task"
       ],
-      "full": ["mood", "interaction", "timer", "music", "party", "video", "max", "childs"]
+      "full": ["mood", "interaction", "timer", "music", "party", "video", "max", "childs", "homeSimu"]
     }
   },
   "conf": {
