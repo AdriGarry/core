@@ -281,15 +281,17 @@
 					data-odi-state="dashboard.odiState"></idea>
 				<max data="dashboard.runningData.arduino" data-access="$root.irda" flex="33"
 					data-odi-state="dashboard.odiState"></max>
-				<videos data="dashboard.runningData.video" data-access="$root.irda" flex="33"
-					data-odi-state="dashboard.odiState"></videos>
-				<rfxcom data="dashboard.runningData.rfxcom" data-access="$root.irda" flex="33"></rfxcom>
+				<bluetooth data="dashboard.runningData.bluetooth" data-access="$root.irda" flex="33"
+					data-odi-state="dashboard.odiState"></bluetooth>
 				<arduino data="dashboard.runningData.arduino" data-access="$root.irda" flex="33"
 					data-odi-state="dashboard.odiState"></arduino>
-				<logs data="dashboard.runningData.logs" data-access="$root.irda" flex="33"></logs>
+				<rfxcom data="dashboard.runningData.rfxcom" data-access="$root.irda" flex="33"></rfxcom>
 				<nmap data="dashboard.runningData" data-access="$root.irda" flex="33"></nmap>
+				<videos data="dashboard.runningData.video" data-access="$root.irda" flex="33"
+					data-odi-state="dashboard.odiState"></videos>
+				<logs data="dashboard.runningData.logs" data-access="$root.irda" flex="33"></logs>
 				<system data="dashboard.runningData.system" data-access="$root.irda" flex="33"></system>
-				<about data="dashboard.runningData.about" data-access="true" flex="33"></about>
+				<about data="dashboard.runningData.about" data-access="true" flex="100"></about>
 			</div>
 
 			<md-button data-ng-click="showLogs()" data-ng-show="$root.irda" data-ng-class="[{'active':fabButtonsVisible}]"

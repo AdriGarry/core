@@ -1035,6 +1035,27 @@ app.component('arduino', {
   }
 });
 
+/** Bluetooth component */
+app.component('bluetooth', {
+  bindings: {
+    data: '<',
+    access: '<',
+    odiState: '<'
+  },
+  templateUrl: 'templates/tiles.html',
+  controller: function (DefaultTile) {
+    const ctrl = this;
+    const tileParams = {
+      label: 'Bluetooth',
+      actionList: [
+        { label: 'On', icon: 'fa-solid fa-toggle-on', url: '/flux/interface/bluetooth/on' },
+        { label: 'Off', icon: 'fa-solid fa-toggle-off', url: '/flux/interface/bluetooth/off' }
+      ]
+    };
+    ctrl.tile = new DefaultTile(tileParams);
+  }
+});
+
 /** Rfxcom component */
 app.component('rfxcom', {
   bindings: {

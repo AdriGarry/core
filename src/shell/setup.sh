@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Setup script
 echo
 echo "setup script..."
 
@@ -79,6 +78,9 @@ sudo systemctl start fail2ban
 
 # Install sound tools & player
 sudo apt-get -y install nmap
+
+# Install bluetooth libs
+sudo apt-get -y install bluetooth bluez libbluetooth-dev libudev-dev
 
 # Test
 espeak -s 125 -v mb/mb-fr1 'Installation terminée.'

@@ -7,7 +7,7 @@
   },
   "modules": {
     "interfaces": {
-      "base": ["button", "led", "hardware", "nmap", "rfxcom", "server", "sound", "watcher"],
+      "base": ["bluetooth", "button", "led", "hardware", "nmap", "rfxcom", "server", "sound", "watcher"],
       "full": ["arduino", "hdmi", "tts"]
     },
     "services": {
