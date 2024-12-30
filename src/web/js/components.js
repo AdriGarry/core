@@ -751,7 +751,7 @@ app.component('idea', {
       label: 'Idea',
       actionList: [
         { label: 'Total lines', icon: 'fa-regular fa-file-code', url: '/flux/interface/hardware/totalLinesTTS' },
-        { label: 'Idea', icon: 'fa-regular fa-lightbulb', url: '/flux/interface/tts/speak', value: { lg: 'en', msg: "I've got an idea !" } },
+        { label: 'Idea', icon: 'fa-regular fa-lightbulb', url: '/flux/service/task/idea' },
         { label: 'Civil Horn', icon: 'fa-solid fa-bullhorn', url: '/flux/service/interaction/civilHorn' },
         { label: 'Subway / Street', icon: 'fa-solid fa-subway', url: '/flux/service/interaction/russia' },
         { label: 'Test', icon: 'fa-solid fa-flag-checkered', url: '/test' }
@@ -904,7 +904,8 @@ app.component('powerPlug', {
         { label: 'Plug 11', icon: 'fa-regular fa-sun', value: { device: 'plug11', continu: true } },
         { label: 'Plug 12', icon: 'fa-regular fa-lightbulb', value: { device: 'plug12', continu: true } },
         { label: 'Plug 13', icon: 'fa-solid fa-tree', value: { device: 'plug13', continu: true } },
-        { label: 'Plug 14', icon: 'fa-solid fa-user-tie', value: { device: 'plug14', continu: true } }
+        { label: 'Plug 14', icon: 'fa-solid fa-user-tie', value: { device: 'plug14', continu: true } },
+        { label: 'ALL TODO', icon: 'fa-solid fa-table-cells', value: { device: 'TODO', continu: true } }
       ]
     };
     ctrl.tile = new DefaultTile(tileParams);
